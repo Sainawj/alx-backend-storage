@@ -1,0 +1,5 @@
+// Adds a new "address" attribute to all documents where the name is "Holberton school".
+db.school.updateMany(
+    {name: "Holberton school"},  // Filter to match documents with the specified name.
+    {$set: {address: "972 Mission street"}}  // Set the new "address" field.
+);
